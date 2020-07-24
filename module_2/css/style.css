@@ -1,0 +1,96 @@
+/**** implementing base styles ****/
+* {
+    box-sizing: border-box;
+}
+.th1{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#hp1 {
+    background-color: rgb(49, 49, 236);
+}
+#hp2 {
+    background-color: rgb(60, 240, 84);
+}
+#hp3 {
+    background-color: rgb(255, 11, 60);
+}
+
+
+p{
+    border: 1px solid black;
+    font-size: small;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    
+}
+.head2{
+    border: 1px solid black;
+    font-size: medium;
+    text-align: right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    float:right;
+}
+/*** Responsive web design ***/
+.row{
+    width:100%;
+
+}
+
+/**** Computer ****/
+@media (min-width:992px){
+    .row{
+        margin-left:30px;
+    }
+    .col-md-3{
+        float: left;
+        border:1px solid black;
+        width: 30%;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        background-color: gray;
+    }
+
+}
+/** Table View **/
+@media (min-width:768px)and (max-width: 991px){
+    .row{
+        margin-left: 4%; 
+    }
+    .col-sm-6 {
+        float: left;
+        border:1px solid black;
+        width:44%;
+        margin-right: 4%;
+        background-color: gray;
+    }
+   .col-sm-1{
+       float:left;
+       border:1px solid black;
+        width:92%;
+        margin-right: 4%;
+        margin-top: 4%;
+        background-color: gray;
+
+   }
+
+}
+/** Mobile View**/
+@media (max-width: 767px){
+    .col-xs-1{
+        float: left;
+        border:1px solid black;
+        width:92%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        background-color: gray;
+    }
+
+}
